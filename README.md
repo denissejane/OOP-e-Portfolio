@@ -23,7 +23,7 @@
 
 This repository contains the complete source code for my **OOP Midterm e-Portfolio** — a fully hand-coded, single-page web application built using vanilla HTML5, CSS3, and JavaScript (ES6+). The e-portfolio serves as a curated academic record of all coursework completed during the midterm period of my Object-Oriented Programming class at the Polytechnic University of the Philippines – Manila.
 
-The portfolio is designed to be visually engaging, responsive, and interactive — covering assignments, activities, seatworks, and exams across both Midterms and Finals terms, with linked file outputs for each submission.
+The portfolio is designed to be visually engaging, responsive, and interactive — covering assignments, activities, seatworks, and exams across both Midterms and Finals terms, with linked file outputs *(stored with source code and input and output screenshots)* for each submission.
 
 ---
 
