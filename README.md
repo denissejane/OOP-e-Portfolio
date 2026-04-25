@@ -73,31 +73,13 @@ The portfolio is designed to be visually engaging, responsive, and interactive �
 
 ## ✨ Features
 
-### 🎨 Design & UI
-- **Dark / Light theme toggle** with smooth CSS variable transitions — activated via the ⭐ star button in the navbar
-- **Animated background canvas** — floating constellation nodes (blue & orange) with dynamic connection lines drawn via the HTML5 Canvas API; updates responsively on window resize
-- **Gradient typography** using `-webkit-background-clip: text` for the hero title
-- **Orbiting dot animation** on the landing hero graphic using CSS `@keyframes` with `transform-origin` offsets
-- **Glassmorphism surfaces** with `backdrop-filter: blur()` on the navbar and cards
-- **Responsive layout** — mobile-friendly via CSS Grid breakpoints at 900px and 700px
-
-### 🧭 Navigation
-- **Main tab navigation** — Home, Midterms, Finals, Contacts — with smooth `fadeUp` animation on tab switch
-- **Hidden "About Me" page** — accessible only through the CTA button on the Home tab, not listed in the navbar
-- **Sub-tab navigation** inside Midterms and Finals — Assignments, Activities, Seatworks, Exams
-- **Back button** on the About Me page to return to Home
-- All open accordions are automatically closed when switching tabs or sub-tabs
-
-### 📋 Accordion Component
-- Each coursework item is wrapped in a custom accordion with expand/collapse behavior
-- Only one accordion can be open at a time per sub-tab panel
-- Open state styled with an orange left border and elevated box-shadow
-- Arrow indicator rotates 180° when open via CSS `transform` transition
-
-### 📂 File Access
-- Each coursework entry includes **View** (opens in new tab) and **Download** buttons linking to local PDF files
-- Instructor `.docx` files are provided as downloadable links inside the accordion body
-- The About Me section features a direct PDF download link
+- **Dark / Light theme toggle** via the ⭐ star button in the navbar
+- **Animated background canvas** — floating constellation nodes with dynamic connection lines (HTML5 Canvas API)
+- **Responsive layout** — mobile-friendly via CSS Grid breakpoints
+- **Tab & sub-tab navigation** across Home, Midterms, Finals, and Contacts
+- **Hidden "About Me" page** — only accessible through the Home CTA button
+- **Accordion components** — one open at a time, auto-closes on tab switch
+- **View & Download buttons** for each coursework PDF output
 
 ---
 
@@ -109,7 +91,7 @@ The portfolio is designed to be visually engaging, responsive, and interactive �
 | **Assignments** | e-Portfolio (Midterm Project), Assignment #1: Introduction to Java |
 | **Activities** | Activity #1: Variables, Activity #2: Operators, Activity #3: Basic ATM System, Activity #4: Scholarship Qualification System, Activity #5: Personal Expense Tracker |
 | **Seatworks** | Seatwork #1: Operators, Seatwork #2: Smart Wallet System, Seatwork #3: Student Age Analyzer |
-| **Exams** | Midterms Exam (Departmental), Quiz #1 (44/45 via Canvas LMS) |
+| **Exams** | Midterms Exam (Departmental), Quiz #1 (via Canvas LMS) |
 
 ### Finals
 *Content to be added upon completion of the final term.*
@@ -118,25 +100,12 @@ The portfolio is designed to be visually engaging, responsive, and interactive �
 
 ## 💡 Technical Notes
 
-### CSS Architecture
-All colors, spacing, typography, and shadow values are defined as CSS custom properties (variables) on `:root`, with a complete override block for `[data-theme="light"]`. This allows the theme to be toggled by a single `setAttribute` call in JavaScript without any inline style manipulation.
-
-```css
-/* Example — toggling theme in JavaScript */
-root.setAttribute('data-theme', isLight ? 'dark' : 'light');
-```
-
-### Canvas Animation
-The background animation uses `requestAnimationFrame` for a smooth, efficient render loop. Each node has a random velocity vector (`vx`, `vy`) and bounces off viewport edges. Connection lines are drawn only between nodes within a threshold distance of 160px, with opacity fading proportionally to distance.
-
-```js
-const alpha = lineAlpha * (1 - dist / maxDist);
-```
-
-On window resize, the animation is cancelled via `cancelAnimationFrame`, the canvas dimensions are updated, and nodes are re-generated to fill the new viewport.
-
-### Tab State Management
-Tab switching is handled entirely through CSS class toggling (`active`) rather than any framework state. All accordions are explicitly reset on navigation to prevent stale open states across tabs.
+- **Theme toggle** — all colors are CSS custom properties on `:root`, overridden by `[data-theme="light"]`. 
+Switching themes is just one `setAttribute` call, no inline styles needed.
+- **Canvas animation** — uses `requestAnimationFrame` for a smooth render loop. Nodes bounce off viewport 
+edges and connect via lines that fade with distance. Resets cleanly on window resize.
+- **Tab state** — managed entirely through CSS class toggling (`.active`), no framework needed. 
+Accordions auto-reset on every tab switch.
 
 ---
 
