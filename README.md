@@ -14,6 +14,7 @@
 ## 🌐 Live Site
 
 👉 [Click here to view my e-Portfolio](https://denissejane.github.io/OOP-e-Portfolio/)
+*Deployed via GitHub Pages · Best viewed on desktop*
 
 ---
 
