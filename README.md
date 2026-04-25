@@ -11,6 +11,12 @@
 
 ---
 
+## 🌐 Live Site
+
+👉 [Click here to view my e-Portfolio](https://denissejane.github.io/OOP-e-Portfolio/)
+
+---
+
 ## 📌 Overview
 
 This repository contains the complete source code for my **OOP Midterm e-Portfolio** — a fully hand-coded, single-page web application built using vanilla HTML5, CSS3, and JavaScript (ES6+). The e-portfolio serves as a curated academic record of all coursework completed during the midterm period of my Object-Oriented Programming class at the Polytechnic University of the Philippines – Manila.
