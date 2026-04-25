@@ -738,30 +738,26 @@ nav, main, footer { position: relative; z-index: 1; }
    11. CONTACTS — fit in viewport, no scroll
    ================================================================ */
 #tab-contacts {
-  height: calc(100vh - var(--nav-height));
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  display: none; /* controlled by JS like all other tabs */
+}
+
+#tab-contacts.active {
+  display: block;
 }
 
 #tab-contacts .page-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  overflow: hidden;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2rem;
 }
 
-#tab-contacts .page-header { margin-bottom: 0.75rem; }
+#tab-contacts .page-header {
+  margin-bottom: 0.75rem;
+}
 
 .contacts-layout {
-  flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
 }
 
 .contact-card {
