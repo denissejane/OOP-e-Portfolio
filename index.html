@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OOP e-Portfolio | KARIM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- SVG Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo" id="theme-toggle" title="Toggle theme">
+      <span class="nav-star">⭐</span>
+    </div>
+    <div class="nav-tabs">
+      <button class="nav-btn active" data-tab="home">Home</button>
+      <button class="nav-btn" data-tab="midterms">Midterms</button>
+      <button class="nav-btn" data-tab="finals">Finals</button>
+      <button class="nav-btn" data-tab="contacts">Contacts</button>
+    </div>
+  </nav>
+
+  <main class="main-content">
+
+    <!-- ==================== HOME TAB ==================== -->
+    <section class="tab-section active" id="tab-home">
+      <div class="landing-container">
+
+        <div class="landing-left">
+          <p class="subject-label">✨ Midterm Project · OOP 2026</p>
+
+          <h1 class="landing-title">
+            <span class="title-main">e-Portfolio</span>
+            <span class="title-sub">in <em>Object-Oriented</em><br>Programming</span>
+          </h1>
+
+          <p class="landing-intro">
+            This e-portfolio is a curated collection of everything I've learned, built, and
+            reflected on throughout my <strong>Object-Oriented Programming</strong> course at PUP Manila.
+            From variables and operators to full OOP systems — it's all here, organized and documented
+            as a record of my growth as a developer.
+          </p>
+
+          <div class="info-card">
+            <div class="info-row">
+              <span class="info-label">👤 Name</span>
+              <span class="info-value">Denisse Jane Karim</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">📚 Section</span>
+              <span class="info-value">BSIT 2-3</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">🎓 Professor</span>
+              <span class="info-value">Mr. Severino Bedis</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">📘 Subject</span>
+              <span class="info-value">COMP 009 — OOP</span>
+            </div>
+          </div>
+
+          <button class="cta-btn" data-tab="aboutme">
+            About Me <span class="cta-arrow">→</span>
+          </button>
+        </div>
+
+        <div class="landing-right">
+          <div class="hero-graphic">
+            <div class="hero-ring ring-1"></div>
+            <div class="hero-ring ring-2"></div>
+            <div class="hero-ring ring-3"></div>
+            <div class="hero-center">
+              <span class="hero-icon">{ }</span>
+              <span class="hero-label">OOP</span>
+            </div>
+            <div class="orbit-dot dot-1"></div>
+            <div class="orbit-dot dot-2"></div>
+            <div class="orbit-dot dot-3"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== ABOUT ME (HIDDEN) ==================== -->
+    <section class="tab-section" id="tab-aboutme">
+      <div class="aboutme-back-bar">
+        <button class="back-btn" data-tab="home">← Back to Home</button>
+      </div>
+      <div class="aboutme-container">
+
+        <div class="aboutme-photo-col">
+          <div class="photo-frame">
+            <img src="myfiles/About ME.jpg" alt="Denisse Jane Karim" class="about-photo" />
+            <div class="photo-badge">BSIT 2-3</div>
+          </div>
+        </div>
+
+        <div class="aboutme-text-col">
+          <div class="photo-score-card" style="width: 100%">
+            <span class="score-label">About Me Task</span>
+            <span class="score-val">30 / 30 ✨</span>
+          </div>
+          <p class="aboutme-eyebrow">📅 Date Given: March 03</p>
+          <h2 class="aboutme-title">Hi, I'm <span class="hl-orange">Denisse Jane</span>!
+            <span class="kaomoji">ꉂ(˵˃ ᗜ ˂˵)･ﾟ✧</span>
+          </h2>
+          <p class="aboutme-desc" style="font-size: 0.85rem;">
+            A sophomore Bachelor of Science in Information Technology student currently enrolled in 2-3
+            at the Polytechnic University of the Philippines - Manila, taking COMP 009 — Object-Oriented Programming.
+            I am passionate about continuously improving my skills and expanding my knowledge in the field of technology,
+            with a strong interest in learning new concepts and exploring emerging tools. I enjoy analyzing problems,
+            breaking them down into manageable parts, and developing logical and efficient solutions, which drives my
+            growth as an aspiring IT professional.
+          </p>
+          <p class="aboutme-instructions">
+            <strong>Instructions:</strong> Complete the "All About Me" template.
+          </p>
+          <a href="myfiles/About ME.pdf" class="pdf-link" download>
+            📄 Download About Me (PDF)
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== MIDTERMS TAB ==================== -->
+    <section class="tab-section" id="tab-midterms">
+      <div class="page-container">
+        <div class="page-header">
+          <h2 class="page-title">Midterms <span class="title-sparkle">⋆⭒˚.⋆</span></h2>
+        </div>
+
+        <p class="tab-hint">✦ Select a category below to view the list of works for this term.<br>
+            <em style="font-size: 0.78rem;">(Click to expand details and see file links that include source code & output screenshots.)</em>
+        </p>
+
+        <div class="subtab-nav">
+          <button class="subtab-btn active" data-subtab="m-assignments">Assignments</button>
+          <button class="subtab-btn" data-subtab="m-activities">Activities</button>
+          <button class="subtab-btn" data-subtab="m-seatworks">Seatworks</button>
+          <button class="subtab-btn" data-subtab="m-exams">Exams</button>
+        </div>
+
+        <!-- MIDTERMS: ASSIGNMENTS -->
+        <div class="subtab-content active" id="subtab-m-assignments">
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="acc-left">
+                <span class="acc-icon">⭐</span>
+                <span class="acc-title">e-Portfolio (Midterm Project)</span>
+              </div>
+              <div class="acc-right">
+                <span class="acc-score">100 pts</span>
+                <span class="acc-arrow">▾</span>
+              </div>
+            </button>
+            <div class="accordion-body">
+              <p class="acc-due">📅 Date: April 26</p>
+              <p class="acc-desc">
+                A midterm e-Portfolio project showcasing all activities, assignments, seatworks, and quizzes in Object-Oriented Programming.<br><br>
+                <strong>Reflection:</strong> Creating my midterms e-portfolio using HTML, CSS, and JavaScript was both challenging and rewarding.
+                It allowed me to apply my knowledge of web development by structuring content, designing layouts, and adding simple interactivity.
+                I encountered some difficulties, especially with layout and file linking, but solving these helped me better understand how websites work.
+                Overall, this project improved my technical skills and gave me a deeper appreciation for front-end development.
+              </p>
+              <a href="https://github.com/denissejane/OOP-EPortfolio.git" class="pdf-link" target="_blank">
+                💻 View GitHub Repository
+              </a>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="acc-left">
+                <span class="acc-icon">📝</span>
+                <span class="acc-title">Assignment #1: Introduction to Java</span>
+              </div>
+              <div class="acc-right">
+                <span class="acc-score">30 pts</span>
+                <span class="acc-arrow">▾</span>
+              </div>
+            </button>
+            <div class="accordion-body">
+              <p class="acc-due">📅 Date: March 03</p>
+              <p class="acc-desc">
+                <strong>Instructions:</strong> Kindly read the questions carefully and write your answer in the yellow pad paper together with name, course, subject and signature on it.<br>
+                <strong>1.</strong> What is Java programming language? Discuss its key features and advantages.<br>
+                <strong>2.</strong> Explain the concept of platform independence in Java. How does Java achieve platform independence?<br>
+                <strong>3.</strong> Discuss the main components of a Java program and their roles.<br>
+                <strong>4.</strong> What are the differences between JDK, JRE, and JVM in Java?<br>
+                <strong>5.</strong> Explain the difference between interpreted and compiled languages. Is Java an interpreted or compiled language?
+              </p>
+              <div class="file-action-group">
+                <span class="file-name-label">📄 2-3_KARIM_DenisseJane_Assignment1.pdf</span>
+                <div class="file-btns">
+                  <a href="/myfiles/Assignment_1.pdf" class="file-btn file-btn-view" target="_blank">👁 View</a>
+                  <a href="/myfiles/Assignment_1.pdf" class="file-btn file-btn-dl" download>⬇ Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- MIDTERMS: ACTIVITIES -->
+        <div class="subtab-content" id="subtab-m-activities">
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="acc-left"><span class="acc-icon">💻</span><span class="acc-title">Activity #1: Variables</span></div>
+              <div class="acc-right"><span class="acc-score">30 pts</span><span class="acc-arrow">▾</span></div>
+            </button>
+            <div class="accordion-body">
+              <p class="acc-due">📅 Date: March 13</p>
+              <p class="acc-desc">
+                <strong>Instructions:</strong><br>
+                • Carefully analyze the given Java program.<br>
+                • Trace the references and memory changes step-by-step.<br>
+                • Complete all required tables and questions.<br>
+                • Show your logical reasoning where necessary.<br>
+                • Write your answers in a yellow paper (handwritten).<br>
+                • Take a clear photo or scan of your work.<br>
+                • Upload your file in Canvas on or before the deadline.<br>
+                • Submission Format: Section_LastName_FirstName_CodeAnalysisActivity#1.pdf
+              </p>
+              <div class="file-action-group">
+                <a href="/instructions/Midterm Activity #1.docx" class="docx-link" download="Midterm Activity #1.docx">Midterm Activity #1.docx</a>
+              </div>
+              <div class="file-action-group">
+                <span class="file-name-label">📄 2-3_KARIM_DenisseJane_CodeAnalysisActivity#1.pdf</span>
+                <div class="file-btns">
+                  <a href="/myfiles/Activity_1.pdf" class="file-btn file-btn-view" target="_blank">👁 View</a>
+                  <a href="/myfiles/Activity_1.pdf" class="file-btn file-btn-dl" download>⬇ Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="acc-left"><span class="acc-icon">💻</span><span class="acc-title">Activity #2: Operators</span></div>
+              <div class="acc-right"><span class="acc-score">30 pts</span><span class="acc-arrow">▾</span></div>
+            </button>
+            <div class="accordion-body">
+              <p class="acc-due">📅 Date: March 13</p>
+              <p class="acc-desc">
+                <strong>General Instructions:</strong><br>
+                • Create a Java program based on the questions.<br>
+                • Follow the exact required output shown in the question.<br>
+                • You must use the specific operator required in each number.<br>
+                • Do NOT hardcode the final answers.<br>
+                • Show proper use of variables and correct operator usage.<br>
+                • Follow proper Java syntax, indentation, and naming conventions.<br>
+                • Use System.out.println() for displaying output.<br>
+                • Screenshot the code and the output.<br>
+                • Compile and run your program to verify correctness before submission.<br>
+                • Submission Format: Section_LastName_FirstName_OperatorsActivity#2.pdf
+              </p>
+              <div class="file-action-group">
+                <a href="/instructions/Midterm Activity #2.docx" class="docx-link" download="Midterm Activity #2.docx">Midterm Activity #2.docx</a>
+              </div>
+              <div class="file-action-group">
+                <span class="file-name-label">📄 2-3_KARIM_DenisseJane_OperatorsActivity#2.pdf</span>
+                <div class="file-btns">
+                  <a href="/myfiles/Activity_2.pdf" class="file-btn file-btn-view" target="_blank">👁 View</a>
+                  <a href="/myfiles/Activity_2.pdf" class="file-btn file-btn-dl" download>⬇ Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="acc-left"><span class="acc-icon">💻</span><span class="acc-title">Activity #3: Basic ATM System</span></div>
+              <div class="acc-right"><span class="acc-score">30 pts</span><span class="acc-arrow">▾</span></div>
+            </button>
+            <div class="accordion-body">
+              <p class="acc-due">📅 Date: April 19</p>
+              <p class="acc-desc">• Building a basic ATM simulation system using OOP concepts including classes, objects, and methods.</p>
+              <div class="file-action-group">
+                <a href="/instructions/Midterm Activity #3.docx" class="docx-link" download="Midterm Activity #3.docx">Midterm Activity #3.docx</a>
+              </div>
+              <div class="file-action-group">
+                <span class="file-name-label">📄 2-3_Karim_DenisseJane_Activity3_BasicATMSystem.pdf</span>
+                <div class="file-btns">
+                  <a href="/myfiles/Activity_3.pdf" class="file-btn file-btn-view" target="_blank">👁 View</a>
+                  <a href="/myfiles/Activity_3.pdf" class="file-btn file-btn-dl" download>⬇ Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="acc-left"><span class="acc-icon">💻</span><span class="acc-title">Activity #4: Scholarship Qualification System</span></div>
+              <div class="acc-right"><span class="acc-score">30 pts</span><span class="acc-arrow">▾</span></div>
+            </button>
+            <div class="accordion-body">
+              <p class="acc-due">📅 Date: April 19</p>
+              <p class="acc-desc">• A system that determines scholarship eligibility based on student grades and criteria using conditional logic.</p>
+              <div class="file-action-group">
+                <a href="/instructions/Midterm Activity #4.docx" class="docx-link" download="Midterm Activity #4.docx">Midterm Activity #4.docx</a>
+              </div>
+              <div class="file-action-group">
+                <span class="file-name-label">📄 2-3_Karim_DenisseJane_Activity4_EnrollmentSystem.pdf</span>
+                <div class="file-btns">
+                  <a href="/myfiles/Activity_4.pdf" class="file-btn file-btn-view" target="_blank">👁 View</a>
+                  <a href="/myfiles/Activity_4.pdf" class="file-btn file-btn-dl" download>⬇ Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="acc-left"><span class="acc-icon">💻</span><span class="acc-title">Activity #5: Personal Expense Tracker</span></div>
+              <div class="acc-right"><span class="acc-score">30 pts</span><span class="acc-arrow">▾</span></div>
+            </button>
+            <div class="accordion-body">
+              <p class="acc-due">📅 Date: April 16</p>
+              <p class="acc-desc">• A personal finance tracker that logs income and expenses, showing a running balance using arrays and loops.</p>
+              <div class="file-action-group">
+                <a href="/instructions/Midterm Activity #5.docx" class="docx-link" download="Midterm Activity #5.docx">Midterm Activity #5.docx</a>
+              </div>
+              <div class="file-action-group">
+                <span class="file-name-label">📄 ExpenseTrackerKarim.pdf</span>
+                <div class="file-btns">
+                  <a href="/myfiles/Activity_5.pdf" class="file-btn file-btn-view" target="_blank">👁 View</a>
+                  <a href="/myfiles/Activity_5.pdf" class="file-btn file-btn-dl" download>⬇ Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- MIDTERMS: SEATWORKS -->
+        <div class="subtab-content" id="subtab-m-seatworks">
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="acc-left"><span class="acc-icon">🖊️</span><span class="acc-title">Seatwork #1: Operators</span></div>
+              <div class="acc-right"><span class="acc-score">15 items</span><span class="acc-arrow">▾</span></div>
+            </button>
+            <div class="accordion-body">
+              <p class="acc-due">📅 Date: March 11</p>
+              <p class="acc-desc">
+                • In-class seatwork covering operator usage in Java programming.<br>
+                • Solve the given problems using the correct operators and Java syntax.<br>
+                • Show your work with solutions clearly written in yellow pad.<br><br>
+                <strong>Reflection:</strong> This seatwork helped me better understand how operators work in Java
+                by analyzing given code and solving problems on paper. It challenged me to carefully choose the
+                correct operators and apply proper syntax while showing my solutions step by step. Through this activity,
+                I improved my understanding of operator usage and became more confident in analyzing and writing code.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="acc-left"><span class="acc-icon">🖊️</span><span class="acc-title">Seatwork #2: Smart Wallet System</span></div>
+              <div class="acc-right"><span class="acc-score">30 pts</span><span class="acc-arrow">▾</span></div>
+            </button>
+            <div class="accordion-body">
+              <p class="acc-due">📅 Date: March 25</p>
+              <p class="acc-desc">• A smart wallet system that tracks balance and transactions in real time using OOP principles.</p>
+              <div class="file-action-group">
+                <a href="/instructions/Midterm Seatwork #2.docx" class="docx-link" download="Midterm Seatwork #2.docx">Midterm Seatwork #2.docx</a>
+              </div>
+              <div class="file-action-group">
+                <span class="file-name-label">📄 2-3_KARIM_DenisseJane_SmartWalletSystem.pdf</span>
+                <div class="file-btns">
+                  <a href="/myfiles/Seatwork_2.pdf" class="file-btn file-btn-view" target="_blank">👁 View</a>
+                  <a href="/myfiles/Seatwork_2.pdf" class="file-btn file-btn-dl" download>⬇ Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="acc-left"><span class="acc-icon">🖊️</span><span class="acc-title">Seatwork #3: Student Age Analyzer</span></div>
+              <div class="acc-right"><span class="acc-score">30 pts</span><span class="acc-arrow">▾</span></div>
+            </button>
+            <div class="accordion-body">
+              <p class="acc-due">📅 Date: April 15</p>
+              <p class="acc-desc">• A program that analyzes student age data and categorizes them using loops and conditional statements.</p>
+              <div class="file-action-group">
+                <a href="/instructions/Midterm Seatwork #3.docx" class="docx-link" download="Midterm Seatwork #3.docx">Midterm Seatwork #3.docx</a>
+              </div>
+              <div class="file-action-group">
+                <span class="file-name-label">📄 2-3_Karim_DenisseJane_StudentAnalyzer.pdf</span>
+                <div class="file-btns">
+                  <a href="/myfiles/Seatwork_3.pdf" class="file-btn file-btn-view" target="_blank">👁 View</a>
+                  <a href="/myfiles/Seatwork_3.pdf" class="file-btn file-btn-dl" download>⬇ Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- MIDTERMS: EXAMS -->
+        <div class="subtab-content" id="subtab-m-exams">
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="acc-left"><span class="acc-icon">📋</span><span class="acc-title">Midterms Exam</span></div>
+              <div class="acc-right"><span class="acc-score">100 pts</span><span class="acc-arrow">▾</span></div>
+            </button>
+            <div class="accordion-body">
+              <p class="acc-due">📅 Date: April 22</p>
+              <p class="acc-desc">
+                • Departmental Midterms Exam covering Object-Oriented Programming fundamentals.<br>
+                • Exam format: Multiple choice, short answer, and coding problems.<br><br>
+                <strong>Reflection:</strong> The midterms exam tested my understanding of Object-Oriented Programming
+                fundamentals through different types of questions, including coding problems. It challenged me to apply
+                key concepts like classes, objects, and methods in a more comprehensive way. While some parts were difficult,
+                the exam helped me identify areas I need to improve and strengthened my problem-solving and coding skills.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="acc-left"><span class="acc-icon">📋</span><span class="acc-title">Quiz #1</span></div>
+              <div class="acc-right"><span class="acc-score">44 / 45</span><span class="acc-arrow">▾</span></div>
+            </button>
+            <div class="accordion-body">
+              <p class="acc-due">📅 Date: April 19</p>
+              <p class="acc-desc">
+                • Online quiz conducted via CANVAS platform.<br>
+                • Duration: 2 hours only.<br>
+                • Covers all topics discussed throughout the course.<br><br>
+                <strong>Reflection:</strong> The online quiz on Canvas required me to review and apply all the topics
+                discussed in class within a limited time. It pushed me to think quickly and recall concepts accurately,
+                especially in analyzing problems and choosing the correct answers. Overall, it helped reinforce my
+                understanding of the lessons and showed me the importance of being well-prepared and attentive to details.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== FINALS TAB ==================== -->
+    <section class="tab-section" id="tab-finals">
+      <div class="page-container">
+        <div class="page-header">
+          <h2 class="page-title">Finals <span class="title-sparkle">⋆⭒˚.⋆</span></h2>
+          <span class="coming-soon-badge">Coming Soon 🚧</span>
+        </div>
+
+        <p class="tab-hint">✦ Select a category below to view the list of works for this term.</p>
+
+        <div class="subtab-nav">
+          <button class="subtab-btn active" data-subtab="f-assignments">Assignments</button>
+          <button class="subtab-btn" data-subtab="f-activities">Activities</button>
+          <button class="subtab-btn" data-subtab="f-seatworks">Seatworks</button>
+          <button class="subtab-btn" data-subtab="f-exams">Exams</button>
+        </div>
+
+        <div class="subtab-content active" id="subtab-f-assignments">
+          <div class="empty-state">
+            <span class="empty-icon">📝</span>
+            <p>No assignments yet — check back soon!</p>
+          </div>
+        </div>
+        <div class="subtab-content" id="subtab-f-activities">
+          <div class="empty-state">
+            <span class="empty-icon">💻</span>
+            <p>No activities yet — check back soon!</p>
+          </div>
+        </div>
+        <div class="subtab-content" id="subtab-f-seatworks">
+          <div class="empty-state">
+            <span class="empty-icon">🖊️</span>
+            <p>No seatworks yet — check back soon!</p>
+          </div>
+        </div>
+        <div class="subtab-content" id="subtab-f-exams">
+          <div class="empty-state">
+            <span class="empty-icon">📋</span>
+            <p>No exams yet — check back soon!</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== CONTACTS TAB ==================== -->
+    <section class="tab-section" id="tab-contacts">
+      <div class="page-container">
+        <div class="page-header">
+          <h2 class="page-title">Contacts <span class="title-sparkle">⋆⭒˚.⋆</span></h2>
+        </div>
+
+        <div class="contacts-layout">
+
+          <div class="contact-card">
+            <div class="contact-card-top">
+              <div class="contact-avatar">
+                <img src="/myfiles/id.jpg" alt="id" style="width:100%; height:100%; object-fit:cover; border-radius:50%;" />
+            </div>
+              <div class="contact-name-block">
+                <h3 class="contact-name">Denisse Jane Karim</h3>
+                <span class="contact-tag">BSIT 2-3 · PUP Manila</span>
+              </div>
+            </div>
+
+            <div class="contact-divider"></div>
+
+            <div class="contact-info-list">
+              <div class="contact-info-row">
+                <span class="contact-info-icon">🎂</span>
+                <div>
+                  <span class="contact-info-label">Birthday</span>
+                  <span class="contact-info-val">01/07/2006</span>
+                </div>
+              </div>
+              <div class="contact-info-row">
+                <span class="contact-info-icon">📍</span>
+                <div>
+                  <span class="contact-info-label">Address</span>
+                  <span class="contact-info-val">Mandaluyong, Philippines</span>
+                </div>
+              </div>
+              <div class="contact-info-row">
+                <span class="contact-info-icon">🏫</span>
+                <div>
+                  <span class="contact-info-label">School</span>
+                  <span class="contact-info-val">Polytechnic University of the Philippines</span>
+                </div>
+              </div>
+              <div class="contact-info-row">
+                <span class="contact-info-icon">📘</span>
+                <div>
+                  <span class="contact-info-label">Course</span>
+                  <span class="contact-info-val">BS Information Technology</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-divider"></div>
+
+            <div class="contact-socials">
+              <p class="socials-label">Get in touch</p>
+              <div class="socials-row">
+                <a href="mailto:dendenissejane@gmail.com" class="social-btn social-gmail">
+                  <span class="social-icon">✉</span>
+                  <span class="social-text">
+                    <span class="social-platform">Gmail</span>
+                    <span class="social-handle">dendenissejane@gmail.com</span>
+                  </span>
+                </a>
+                <a href="mailto:denissejanefkarim@iskolarngbayan.pup.edu.ph" class="social-btn social-edu">
+                  <span class="social-icon">🎓</span>
+                  <span class="social-text">
+                    <span class="social-platform">Edu Mail</span>
+                    <span class="social-handle">denissejanefkarim@iskolarngbayan.pup.edu.ph</span>
+                  </span>
+                </a>
+                <a href="https://www.facebook.com/denissejanefk" class="social-btn social-fb" target="_blank">
+                  <span class="social-icon">𝗳</span>
+                  <span class="social-text">
+                    <span class="social-platform">Facebook</span>
+                    <span class="social-handle">Denisse Jane Karim</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>made with 🧡 by <strong>KARIM of BSIT2-3</strong> · OOP 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
